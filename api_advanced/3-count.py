@@ -6,7 +6,7 @@ import requests
 def count_words(subreddit, word_list, counts={}, after=None):
     """Print keyword counts from hot titles, sorted by count then word."""
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {"User-Agent": "alu-scripting"}
+    headers = {"User-Agent": "linux:alu.api_advanced:v1.0 (by /u/alu_student)"}
     params = {"after": after} if after else {}
     response = requests.get(url, headers=headers, params=params,
                             allow_redirects=False)
