@@ -18,7 +18,6 @@ def top_ten(subreddit):
         print(None)
         return
     if response.status_code != 200:
-        print(response.status_code)  # temporary debug line
         print(None)
         return
     try:
